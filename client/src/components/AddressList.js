@@ -15,7 +15,7 @@ import {
 } from '@mui/material';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = process.env.REACT_APP_API_URL || 'https://farm-produce-pickup.vercel.app';
 
 function AddressList() {
   const [addresses, setAddresses] = useState([]);

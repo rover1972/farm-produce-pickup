@@ -15,7 +15,7 @@ import BackspaceIcon from '@mui/icons-material/Backspace';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = process.env.REACT_APP_API_URL || 'https://farm-produce-pickup.vercel.app';
 
 function KioskCheckIn() {
   const [number, setNumber] = useState('');

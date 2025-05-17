@@ -13,7 +13,7 @@ import {
 import axios from 'axios';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = process.env.REACT_APP_API_URL || 'https://farm-produce-pickup.vercel.app';
 
 function CheckInForm() {
   const [formData, setFormData] = useState({

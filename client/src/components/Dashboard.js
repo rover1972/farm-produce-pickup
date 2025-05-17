@@ -15,7 +15,7 @@ import {
 import { BarChart } from '@mui/x-charts/BarChart';
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL || 'https://farm-produce-pickup.vercel.app/api/';
+const API_URL = process.env.REACT_APP_API_URL || 'https://farm-produce-pickup.vercel.app';
 
 function Dashboard() {
   const [checkInData, setCheckInData] = useState([]);
